@@ -34,7 +34,6 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
   font-style: normal;
 }
 /* SECCIÓN HERO */
-
 .hero {
   background-image: url('hero.png'); /* Ajusta la ruta si es necesario */
   background-size: cover;
@@ -329,9 +328,21 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
 
 
 @media screen and (max-width: 480px) {
+  .hero {
+  background-image: url('hero1.png'); /* Ajusta la ruta si es necesario */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero h1 {
     font-size: 20vw;
-    color: white;
+    color: #ac8a2e;
     line-height: 1.1;
     margin: 0;
     text-align: center;
