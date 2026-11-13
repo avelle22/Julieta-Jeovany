@@ -17,7 +17,7 @@ h2 {
 
 @font-face {
   font-family: 'Opti Option';
-  src: url('../fonts/OPTIOptionMedium.otf');
+  src: url('OPTIOptionMedium.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,13 +30,13 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
 
 @font-face {
   font-family: 'Hatton';
-  src: url('../fonts/hatton-regular.ttf') format('opentype');
+  src: url('hatton-regular.ttf') format('opentype');
   font-style: normal;
 }
 /* SECCIÓN HERO */
 
 .hero {
-  background-image: url('../img/hero.png'); /* Ajusta la ruta si es necesario */
+  background-image: url('hero.png'); /* Ajusta la ruta si es necesario */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -287,7 +287,7 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
 
 /* SECCIÓN CIERRE */
 .cierre {
-  background-image: url('../img/cierre2.png'); /* Ajusta la ruta si es necesario */
+  background-image: url('cierre2.png'); /* Ajusta la ruta si es necesario */
   background-size: cover;
   background-position: 90%;
   height: 10px;
@@ -345,7 +345,7 @@ body > * {
   }
 
    .hero {
-    background-image: url('../img/hero.JPEG');
+    background-image: url('hero.JPEG');
     background-size: cover;
     background-position: 54% center; /* mueve la foto un poco a la izquierda */
     height: 100vh;
