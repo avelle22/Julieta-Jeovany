@@ -165,21 +165,29 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
 /* BLOQUES DE EVENTO */
 .bloque-evento {
   padding: 20px;
-  max-width: 300px;
+  width: 100%;
+  max-width: 340px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .icono-evento {
   width: 200px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .bloque-evento .fecha,
 .bloque-evento .lugar,
 .bloque-evento .hora {
+  width: 100%;
   font-size: 18px;
   margin: 8px 0;
   color: #222;
+  text-align: center;
 }
 
 .bloque-evento .mini {
@@ -191,18 +199,17 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
 /* BOTÓN GOOGLE MAPS */
 .boton-mapa {
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px auto 0;
   background-color: #f8f8f8;
   color: #222;
   padding: 8px 20px;
   border-radius: 20px;
-  border: 2px solid #222; /* ← Aquí está el borde */
+  border: 2px solid #222;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 .boton-mapa:hover {
   background-color: #222;
   color: #f8f8f8;
@@ -366,7 +373,7 @@ body > * {
   }
 
   .cierre h1 {
-    font-size: 42px;
+    font-size: 52px;
     line-height: 1.1;
   }
 
