@@ -356,7 +356,7 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
     line-height: 1;
     margin: 0;
     text-align: center;
-    transform: translateY(-80px);
+    transform: translateY(-60px);
   }
 
   .hero h1 span {
@@ -364,7 +364,7 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
   }
 
   h2 {
-    font-size: 55px !important;
+    font-size: 45px !important;
   }
 
 body > * {
