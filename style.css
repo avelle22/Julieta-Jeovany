@@ -46,7 +46,6 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
   justify-content: center;
 }
 
-/* Capa de oscurecimiento */
 /* Texto principal */
 .hero h1 {
   font-size: 8vw;
@@ -328,10 +327,29 @@ p, .btn-enviar, .btn-no, .btn-si, .boton-mapa, .botones-confirmacion, .bloque-ev
 
 
 @media screen and (max-width: 480px) {
-.hero {
-    background-image: url('hero1.png');
+ .hero {
+    background-image: none;
+    overflow: hidden;
   }
 
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-image: url('hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .overlay {
+    position: relative;
+    z-index: 1;
+  }
 .hero h1 {
     font-size: 18vw;
     color: #ac8a2e;
