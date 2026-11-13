@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J&J</title> <!-- Título que se muestra en la pestaña del navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"> <!-- Incluye el framework Bootstrap para estilos y layouts -->
+    
+    <!-- FANCYAPPS - https://fancyapps.com/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"> <!-- Librería FancyApps para galerías modales (popup) -->
+    
+    <!-- AOS ANIMATE - https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Librería AOS para animaciones al hacer scroll -->
+
+    <!-- LINK LOCALES -->
+     
+    <link rel="stylesheet" href="css/style.css"> 
+    
+    <!--CONTADOR-->
+    <script>
+  const cuentaAtras = () => {
+    const fechaBoda = new Date("December 12, 2026 00:00:00").getTime();
+    const ahora = new Date().getTime();
+    const diferencia = fechaBoda - ahora;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    document.getElementById("dias").innerText = dias;
+    document.getElementById("horas").innerText = horas;
+    document.getElementById("minutos").innerText = minutos;
+    document.getElementById("segundos").innerText = segundos;
+  };
+
+  setInterval(cuentaAtras, 1000);
+</script>
+</head>
+
+<body>
+
+<!--HERO-->
+<section class="hero">
+  <div class="overlay">
+    <h1>Julieta & Jeovany</h1>
+    <h2>¡Nos Casamos!</h2>
+  </div>
+</section>
+
+
+<!--CONTADOR-->
+<section class="contador">
+  <div class="contenido">
+    <div data-aos="fade-down" data-aos-delay="150">
+    <p class="frase">VAMOS DE LA MANO HACIA</p>
+    <h2>El gran día...</h2>
+    <p class="fecha-evento">12 DE DICIEMBRE DE 2026</p>
+
+    <div class="reloj">
+      <div><span id="dias">0</span><p>DÍAS</p></div>
+      <div><span id="horas">0</span><p>HORAS</p></div>
+      <div><span id="minutos">0</span><p>MINUTOS</p></div>
+      <div><span id="segundos">0</span><p>SEGUNDOS</p></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!--EVENTO-->
+<section class="evento">
+  <div class="contenido">
+    <div data-aos="fade-down" data-aos-delay="150">
+    <p>ACOMPAÑANOS EN ESTE GRAN DÍA</p>
+    <h2>Detalles del evento</h2>
+
+      <!-- BLOQUE SALÓN -->
+      <div class="bloque-evento">
+        <img src="img/salon.png" alt="Salón" class="icono-evento">
+        <p class="fecha">12 DICIEMBRE 2026</p>
+        <p class="lugar">Jardín de Eventos</p>
+        <p class="hora">6:30 PM</p>
+        <a href="https://www.google.com/maps/@32.616111,-115.4214585,9a,75y,349.16h,90t/data=!3m7!1e1!3m5!1sL9I9i2ZkwQFBv9WSNjL60w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DL9I9i2ZkwQFBv9WSNjL60w%26yaw%3D349.16!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="boton-mapa">Google Maps</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!--PROGRAMA-->
+<section class="programa">
+  <div class="contenido">
+    <div data-aos="fade-down" data-aos-delay="150">
+    <p class="intro">ASÍ SERÁ NUESTRO GRAN DÍA, TE COMPARTIMOS NUESTRO</p>
+    <h2>Programa</h2>
+
+    <div class="bloques-programa">
+      <div class="bloque">
+        <img src="img/ceremonia.png" alt="Ceremonia" class="icono">
+        <div class="texto">
+          <p class="hora">6:30 PM</p>
+          <p>Recepción</p>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <img src="img/recepcion.png" alt="Recepción" class="icono">
+        <div class="texto">
+          <p class="hora">8:00 PM</p>
+          <p>Brindis</p>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <img src="img/cena.png" alt="Cena" class="icono">
+        <div class="texto">
+          <p class="hora">8:30 PM</p>
+          <p>Cena</p>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <img src="img/anillos.png" alt="Fin del evento" class="icono">
+        <div class="texto">
+          <p class="hora">10:00 PM</p>
+          <p>Baile</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!--CIERRE-->
+<section class="cierre" style="background-image: url('img/cierre2.png');">
+  <div class="overlay" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
+    <h1>Julieta & Jeovany</h1>
+    <p>12.12.26</p>
+  </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <audio id="musicaFondo" loop preload="auto">
+      <source src="audio/nuestra-cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const musica = document.getElementById("musicaFondo");
+        musica.volume = 0.6;
+
+        const reproducirMusica = () => {
+          musica.play().catch(() => {
+            console.log("Esperando interacción para reproducir.");
+          });
+        };
+
+        reproducirMusica();
+
+        document.addEventListener("click", reproducirMusica, { once: true });
+        document.addEventListener("touchstart", reproducirMusica, { once: true });
+      });
+    </script>
+  </body>
+</html>
+
